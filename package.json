@@ -1,6 +1,7 @@
 {
   "name": "grade-calculator",
-  "version": "0.1.0",
+  "description": "A calculator specifically made for calculating grades after changes made by the student.",
+  "version": "4.0.0",
   "private": true,
   "type": "module",
   "scripts": {
