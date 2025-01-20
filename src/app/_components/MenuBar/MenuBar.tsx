@@ -13,38 +13,39 @@ export default function MenuBar() {
           top: "0",
           overflow: "hidden",
           padding: "0",
-          paddingLeft: "15px",
-          paddingRight: "15px",
+          background: "rgba(0, 0, 0, 0.2)",
         }}
-      >        <Stack
-          direction={"row"}
-          spacing={1}
-          sx={{
-              width: "100%",
-              height: "100%",
-          }}
       >
         <Stack
           direction={"row"}
-          spacing={1}
+          spacing={0}
           sx={{
             width: "100%",
             height: "100%",
           }}
         >
-          <MenuItem>
-            <span>
-              Grade Calculator <span style={{ color: "gray" }}>V4</span>
-            </span>
-          </MenuItem>
+          <Stack
+            direction={"row"}
+            spacing={0}
+            sx={{
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <MenuItem>
+              <span style={{ margin: "15px" }}>
+                Grade Calculator <span style={{ color: "gray" }}>V4</span>
+              </span>
+            </MenuItem>
+            <MenuButton>
+              <span>Home</span>
+            </MenuButton>
+            <MenuButton>
+              <span>Course Grades</span>
+            </MenuButton>
+          </Stack>
           <MenuButton>
-            <span>Home</span>
-          </MenuButton>
-          <MenuButton>
-            <span>Course Grades</span>
-          </MenuButton>
-          <MenuButton>
-            <span>Login</span>
+            <span style={{ margin: "5px" }}>Login</span>
           </MenuButton>
         </Stack>
       </Box>
